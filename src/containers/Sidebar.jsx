@@ -9,7 +9,7 @@ import DashboardItems from "../constants/dashboardItems.json"
 
 const Sidebar = () => {
     return (
-        <div className='h-screen w-2/12 rounded-tl-3xl bg-gradient-to-b from-teal-600 to-teal-400 py-20'>
+        <div className='h-screen w-2/12 rounded-tl-3xl bg-gradient-to-b from-teal-600 to-teal-400 py-20 overflow-hidden'>
             <div className='flex items-center justify-center'>
                 <Avatar avatar={AvatarImg} />
             </div>

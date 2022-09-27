@@ -2,21 +2,25 @@ import React from 'react';
 import {IoIosArrowDown} from 'react-icons/io'
 
 
-const SidebarButton = props => {
-    const [isClicked, setClicked] = React.useState(true)
+const SidebarButton = ({
+    title,
+    children,
+    url
+}) => {
+    const [isClicked, setClicked] = React.useState(false)
 
     const handleClick = () => {
         setClicked(!isClicked)
     }
 
-    let toggleButton = isClicked ? 'h-[60px]' : 'h-auto';
+    let toggleButton = isClicked ? 'h-auto' : 'h-[60px]';
     return (
-        <ul className={`bg-white bg-opacity-0 mt-1 text-lg text-gray-100 hover:bg-opacity-20 rounded-r-2xl mr-3 pb-2 overflow-hidden ${props.children ? toggleButton : 'h-[60px]' }`} onClick={handleClick}>
-        <a className='w-full py-4 font-bold cursor-pointer transition flex-row flex justify-between  pl-12 px-7 items-center' href={null ? null : props.url}>
-            {props.title}
-            {props.children ? <IoIosArrowDown />  : undefined}
+        <ul className={`bg-white bg-opacity-0 mt-1 text-lg text-gray-100 hover:bg-opacity-20 rounded-r-2xl mr-3 pb-2 overflow-hidden ${isClicked ? 'bg-opacity-10' : ''} ${children ? toggleButton : 'h-[60px]' }`} onClick={handleClick}>
+        <a className='w-full py-4 font-bold cursor-pointer transition flex-row flex justify-between  pl-12 px-7 items-center' href={null ? null : url}>
+            {title}
+            {children ? <IoIosArrowDown />  : undefined}
         </a>
-        {props.children}
+        {children}
         </ul>
     );
 };
