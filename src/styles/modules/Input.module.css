@@ -1,0 +1,9 @@
+.success{
+    border-color: #19D445;
+    background-color: #2ecc702f;
+}
+
+.error{
+    border-color: #f04d4d;
+    background-color: #cc2e2e2f;  
+}
