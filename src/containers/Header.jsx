@@ -8,10 +8,10 @@ const Header = ({
   title,
 }) => {
     return (
-        <div className='px-6 py-4 flex flex-row justify-between items-center border-b border-stone-200 w-full mb-4'>
+        <div className='px-6 py-7 flex flex-row justify-between items-center border-b border-stone-200 w-full mb-4'>
 
           <div className='flex flex-row'>
-            <h1 className='text-4xl text-stone-700 font-bold'>{title}</h1>
+            <h1 className='text-5xl text-stone-700 font-bold'>{title}</h1>
           </div>
           <div className='flex flex-row items-center gap-5'>
             <SearchBox />

@@ -15,7 +15,7 @@ const LineCharts = () => {
     datasets: [
       {
         label: "فروش امروز",
-        data: chartData.map((data) => data.test),
+        data: chartData.map((data) => data.soldProducts),
         backgroundColor: ["#28bd63"],
         pointRadius: 5,
       }
