@@ -1,7 +1,7 @@
 export const LineOptions = {
     animations: {
         radius: {
-          duration: 200,
+          duration: 250,
           easing: 'linear',
         }
       },
