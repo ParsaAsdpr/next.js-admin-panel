@@ -1,11 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
+import LineCharts from "../components/charts/LineCharts";
 import Button from "../components/common/Button";
 import TextInput from "../components/common/Inputs/TextInput";
 import Header from "../containers/Header";
 import Sidebar from "../containers/Sidebar";
 
+
 export default function Home() {
+
   return (
     <div dir="rtl" id="yourAppElement">
       <Head>
@@ -20,12 +23,10 @@ export default function Home() {
         </div>
         <div className="w-full">
           <Header title='داشبورد' />
-          <TextInput
-            title="نام کاربری"
-            required
-            type="text"
-            placeholder="پارسا اسدپور"
-          />
+          <div className="grid grid-cols-2 gap-1 px-10">
+            <div></div>
+          <LineCharts />
+            </div>
           <Button type="default">Primary</Button>
         </div>
       </div>
