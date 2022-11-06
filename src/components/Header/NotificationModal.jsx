@@ -11,7 +11,7 @@ const NotificationModal = ({ notifications, isOpen, setOpen }) => {
     <>
     <div className={`absolute z-40 w-full h-screen top-0 left-0 ${isOpen ? "block" : "hidden"}`} onClick={handleOverlayClick}></div>
     <ul
-      className={`py-2 px-4 bg-white absolute z-50 left-0 top-16 rounded-md shadow-lg w-[300px] flex flex-col overflow-hidden duration-1000 ${
+      className={`py-2 px-4 bg-white absolute z-50 left-0 top-20 rounded-md shadow-lg w-[300px] flex flex-col overflow-hidden duration-1000 ${
         isOpen ? "visible opacity-1" : "hidden opacity-0"
       }`}
     >
