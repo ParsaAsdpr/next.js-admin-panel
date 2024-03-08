@@ -1,0 +1,9 @@
+@font-face {
+    font-family: iransans;
+    src: url(../fonts/IRANSans-web.woff);
+}
+
+*{
+    font-family: iransans, Geneva;
+    font-size-adjust: from-font;
+}
